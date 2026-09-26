@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-housing-intel",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Housing Intel MCP — Meta-pack that chains FRED, BLS, ATTOM, and HUD APIs",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-9deb33bab3426f63f2c9f7ffb7c4091c2d7559dcc73706722755a370453d2910",
-    "sourceCommit": "70cd53748fc9f9a43ed3681d751bfa96e701efd2"
+    "sourceHash": "v1-adc9817159fe6d6d7b6de7ecb75715724f8bdc7801b4c1a3258fd3c3db72bd96",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
