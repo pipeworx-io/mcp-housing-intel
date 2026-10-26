@@ -1,8 +1,8 @@
 # mcp-housing-intel
 
-Housing Intel MCP — Meta-pack that chains FRED, BLS, ATTOM, and HUD APIs
+Housing Intel MCP — Meta-pack that chains FRED, BLS, ATTOM, and HUD APIs into higher-level housing market workflows.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1683+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1881+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 ## Tools
 
@@ -63,7 +63,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1683+ data sources. The
+Both URLs reach the same gateway and the same 1881+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
