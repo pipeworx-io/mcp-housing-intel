@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-housing-intel",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Housing Intel MCP — Meta-pack that chains FRED, BLS, ATTOM, and HUD APIs into higher-level housing market workflows.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-housing-intel": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "housing-intel"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-housing-intel.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/housing-intel",
   "pipeworx": {
-    "sourceHash": "v1-d55a960521cc66a943be6960cdd93bfe2d22c94720a21735d913507e72722e28",
-    "sourceCommit": "24e32b525f9c0b2fd7d94b519b08abb108cc11cd"
+    "mode": "gateway",
+    "slug": "housing-intel",
+    "gatewaySlug": "housing-intel",
+    "sourceHash": "v1-1b452f5efd36f85439b065bd66d03a43a68c4eb245559fa13d9ee1e0ed89ec3d",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
